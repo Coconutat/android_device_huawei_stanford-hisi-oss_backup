@@ -9,6 +9,9 @@ DEVICE_PATH := device/huawei/stanford
 # Inherit from hi3660-common
 include device/huawei/hi3660-common/BoardConfigCommon.mk
 
+# Kernel
+TARGET_KERNEL_CONFIG := merge_hi3660_defconfig
+
 # Partitions - dynamic
 BOARD_SUPER_PARTITION_BLOCK_DEVICES := cust eng_system eng_vendor odm patch preas preavs prets pretvs product system vendor
 BOARD_SUPER_PARTITION_PRETS_DEVICE_SIZE := 25165824
